@@ -15,23 +15,23 @@ class TestBasic:
     MN = -10
     MX = 10
     def test_0(self):
-        a = random.randrange(self.MN, self.MX)
+        a = random.uniform(self.MN, self.MX)
         assert square(a) == a * a
         
     def test_1(self):
-        a = random.randrange(self.MN, self.MX)
+        a = random.uniform(self.MN, self.MX)
         assert square(a) == a * a
 
     def test_2(self):
-        a = random.randrange(self.MN, self.MX)
+        a = random.uniform(self.MN, self.MX)
         assert square(a) == a * a
 
     def test_3(self):
-        a = random.randrange(self.MN, self.MX)
+        a = random.uniform(self.MN, self.MX)
         assert square(a) == a * a
 
     def test_4(self):
-        a = random.randrange(self.MN, self.MX)
+        a = random.uniform(self.MN, self.MX)
         assert square(a) == a * a
 
 
@@ -39,23 +39,23 @@ class TestMin:
     MN = -1_000
     MX = 1_000
     def test_0(self):
-        a = random.randrange(self.MN, self.MX)
+        a = random.uniform(self.MN, self.MX)
         assert square(a) == a * a
         
     def test_1(self):
-        a = random.randrange(self.MN, self.MX)
+        a = random.uniform(self.MN, self.MX)
         assert square(a) == a * a
 
     def test_2(self):
-        a = random.randrange(self.MN, self.MX)
+        a = random.uniform(self.MN, self.MX)
         assert square(a) == a * a
 
     def test_3(self):
-        a = random.randrange(self.MN, self.MX)
+        a = random.uniform(self.MN, self.MX)
         assert square(a) == a * a
 
     def test_4(self):
-        a = random.randrange(self.MN, self.MX)
+        a = random.uniform(self.MN, self.MX)
         assert square(a) == a * a
 
         
@@ -66,27 +66,27 @@ class TestMid:
     pytest.result = True
 
     def test_0(self):
-        a = random.randrange(self.MN, self.MX)
+        a = random.uniform(self.MN, self.MX)
         pytest.result = pytest.result and square(a) == a * a
         assert square(a) == a * a
         
     def test_1(self):
-        a = random.randrange(self.MN, self.MX)
+        a = random.uniform(self.MN, self.MX)
         # pytest.result = pytest.result and square(a) == a * a
         assert square(a) == a * a
 
     def test_2(self):
-        a = random.randrange(self.MN, self.MX)
+        a = random.uniform(self.MN, self.MX)
         # pytest.result = pytest.result and square(a) == a * a
         assert square(a) == a * a
 
     def test_3(self):
-        a = random.randrange(self.MN, self.MX)
+        a = random.uniform(self.MN, self.MX)
         # pytest.result = pytest.result and square(a) == a * a
         assert square(a) == a * a
 
     def test_4(self):
-        a = random.randrange(self.MN, self.MX)
+        a = random.uniform(self.MN, self.MX)
         # pytest.result = pytest.result and square(a) == a * a
         assert square(a) == a * a
 
@@ -97,21 +97,21 @@ class TestMax:
     MX = 10 ** 13
 
     def test_0(self):
-        a = random.randrange(self.MN, self.MX)
+        a = random.uniform(self.MN, self.MX)
         assert square(a) == a * a
         
     def test_1(self):
-        a = random.randrange(self.MN, self.MX)
+        a = random.uniform(self.MN, self.MX)
         assert square(a) == a * a
 
     def test_2(self):
-        a = random.randrange(self.MN, self.MX)
+        a = random.uniform(self.MN, self.MX)
         assert square(a) == a * a
 
     def test_3(self):
-        a = random.randrange(self.MN, self.MX)
+        a = random.uniform(self.MN, self.MX)
         assert square(a) == a * a
 
     def test_4(self):
-        a = random.randrange(self.MN, self.MX)
+        a = random.uniform(self.MN, self.MX)
         assert square(a) == a * a
