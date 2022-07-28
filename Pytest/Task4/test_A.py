@@ -58,13 +58,13 @@ class TestMin:
         a = random.randrange(self.MN, self.MX)
         assert square(a) == a * a
 
-
-pytest.result = True
         
 class TestMid:
     MN = 10 ** 4
     MX = 10 ** 6
     
+    pytest.result = True
+
     def test_0(self):
         a = random.randrange(self.MN, self.MX)
         pytest.result = pytest.result and square(a) == a * a
@@ -72,26 +72,26 @@ class TestMid:
         
     def test_1(self):
         a = random.randrange(self.MN, self.MX)
-        pytest.result = pytest.result and square(a) == a * a
+        # pytest.result = pytest.result and square(a) == a * a
         assert square(a) == a * a
 
     def test_2(self):
         a = random.randrange(self.MN, self.MX)
-        pytest.result = pytest.result and square(a) == a * a
+        # pytest.result = pytest.result and square(a) == a * a
         assert square(a) == a * a
 
     def test_3(self):
         a = random.randrange(self.MN, self.MX)
-        pytest.result = pytest.result and square(a) == a * a
+        # pytest.result = pytest.result and square(a) == a * a
         assert square(a) == a * a
 
     def test_4(self):
         a = random.randrange(self.MN, self.MX)
-        pytest.result = pytest.result and square(a) == a * a
+        # pytest.result = pytest.result and square(a) == a * a
         assert square(a) == a * a
 
 
-@pytest.mark.skipif(pytest.result, reason="Previous test failed!")
+@pytest.mark.skipif(not pytest.result, reason="Previous test failed!")
 class TestMax:
     MN = 10 ** 12
     MX = 10 ** 13
