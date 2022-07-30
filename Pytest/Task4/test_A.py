@@ -58,16 +58,20 @@ class TestMin:
         a = random.uniform(self.MN, self.MX)
         assert square(a) == a * a
 
+IS_OK = True
         
 class TestMid:
     MN = 10 ** 4
     MX = 10 ** 6
     
-    pytest.result = True
+    # pytest.result = True
 
     def test_0(self):
         a = random.uniform(self.MN, self.MX)
-        pytest.result = pytest.result and square(a) == a * a
+        if square(a) != a * a:
+            IS_OK = False
+        print(square(a))
+        print(a * a)
         assert square(a) == a * a
         
     def test_1(self):
@@ -91,7 +95,7 @@ class TestMid:
         assert square(a) == a * a
 
 
-@pytest.mark.skipif(not pytest.result, reason="Previous test failed!")
+@pytest.mark.skipif(not IS_OK, reason="Previous test failed!")
 class TestMax:
     MN = 10 ** 12
     MX = 10 ** 13
